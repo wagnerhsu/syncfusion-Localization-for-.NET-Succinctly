@@ -39,5 +39,13 @@ namespace ClassLibraryDevelopers
             var providers = new List<ILanguageProvider>(_providers) { provider };
             _providers = providers;
         }
+
+        public static void Unregister(ILanguageProvider provider)
+        {
+            if (_providers.Contains(provider))
+            {
+                _providers.Remove(provider);
+            }
+        }
     }
 }

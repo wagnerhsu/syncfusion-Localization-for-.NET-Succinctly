@@ -4,8 +4,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <ProjectGuid>{88A4B08B-7791-47FD-B1F4-61D83267B8FC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net40</TargetFramework>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFramework>net461</TargetFramework>
     <AssemblyTitle>ClassLibraryDevelopers</AssemblyTitle>
     <Company>Hewlett-Packard</Company>
     <Product>ClassLibraryDevelopers</Product>
@@ -42,10 +41,7 @@
       <DependentUpon>InternalResources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="obj\x86\Debug\.NETFramework,Version=v4.0,Profile=Client.AssemblyAttributes.cs" />
-  </ItemGroup>
-  <ItemGroup>
+   <ItemGroup>
     <EmbeddedResource Update="ChineseResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ChineseResource.Designer.cs</LastGenOutput>

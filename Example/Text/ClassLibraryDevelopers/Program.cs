@@ -6,7 +6,10 @@ namespace ClassLibraryDevelopers
     {
         static void Main(string[] args)
         {
-            LanguageProvider.Register(new StringTableProvider(ChineseResource.ResourceManager));
+            var provider = new StringTableProvider(ChineseResource.ResourceManager);
+            LanguageProvider.Register(provider);
+            Console.WriteLine(LanguageProvider.GetString("SomeName"));
+            LanguageProvider.Unregister(provider);
             Console.WriteLine(LanguageProvider.GetString("SomeName"));
         }
     }
